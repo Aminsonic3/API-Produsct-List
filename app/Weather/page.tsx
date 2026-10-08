@@ -48,7 +48,11 @@ const Weather = () => {
 
   return (
     <div className="bg-blue-300 px-5">
-      <select className="text-2xl hover:cursor-pointer bg-amber-50 my-3 px-3 border-0 rounded-3xl" value={city} onChange={(e) => setCity(e.target.value)}>
+      <select
+        className="text-2xl hover:cursor-pointer bg-amber-50 my-3 px-3 border-0 rounded-3xl"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+      >
         {cities.map((c) => (
           <option key={c.name} value={c.name}>
             {c.name}
